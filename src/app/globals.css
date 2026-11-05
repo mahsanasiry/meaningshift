@@ -9,6 +9,10 @@
   --accent: #1f4fd8;
   --accent-foreground: #ffffff;
   --focus-ring: #1f4fd8;
+  --danger: #b42318;
+  --danger-surface: #fef3f2;
+  --success: #067647;
+  --success-surface: #ecfdf3;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,6 +25,10 @@
     --accent: #7da2ff;
     --accent-foreground: #0e1117;
     --focus-ring: #7da2ff;
+    --danger: #ff9b92;
+    --danger-surface: #2b1412;
+    --success: #6ce9a6;
+    --success-surface: #0f2a1d;
   }
 }
 
@@ -32,6 +40,10 @@
   --color-border: var(--border);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+  --color-danger: var(--danger);
+  --color-danger-surface: var(--danger-surface);
+  --color-success: var(--success);
+  --color-success-surface: var(--success-surface);
   --font-sans: system-ui, "Segoe UI", Tahoma, "Noto Sans Arabic", sans-serif;
 }
 
