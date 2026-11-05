@@ -3,7 +3,8 @@ import { redirect } from "next/navigation";
 import type { ReactNode } from "react";
 import { getCurrentUser } from "@/features/auth/current-user";
 import { SignOutButton } from "@/features/auth/sign-out-button";
-
+// Every page in this area depends on the signed-in user, so none of it can be prerendered.
+export const dynamic = "force-dynamic";
 export default async function WorkspaceLayout({ children }: Readonly<{ children: ReactNode }>) {
   const user = await getCurrentUser();
   if (!user) {
